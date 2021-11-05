@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCore Custom Theme Training", "OrchardCore Custom Theme Training\OrchardCore Custom Theme Training.csproj", "{FB82840D-DA95-4D7C-BC50-C383E672BEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTheme", "OrchardCore.NewTheme\NewTheme.csproj", "{3F469D89-8031-431F-A442-B550BD48B725}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB82840D-DA95-4D7C-BC50-C383E672BEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB82840D-DA95-4D7C-BC50-C383E672BEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB82840D-DA95-4D7C-BC50-C383E672BEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB82840D-DA95-4D7C-BC50-C383E672BEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F469D89-8031-431F-A442-B550BD48B725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F469D89-8031-431F-A442-B550BD48B725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F469D89-8031-431F-A442-B550BD48B725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F469D89-8031-431F-A442-B550BD48B725}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CD6DD9E-ACDB-4EB9-85C9-310C2DEC6827}
+	EndGlobalSection
+EndGlobal

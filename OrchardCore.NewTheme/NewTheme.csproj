@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\favicon.ico" />
+    <None Include="wwwroot\assets\img\about.jpg" />
+    <None Include="wwwroot\assets\img\bg.jpg" />
+    <None Include="wwwroot\assets\img\intro.jpg" />
+    <None Include="wwwroot\assets\img\products-01.jpg" />
+    <None Include="wwwroot\assets\img\products-02.jpg" />
+    <None Include="wwwroot\assets\img\products-03.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\Admin\.nuget\packages\orchardcore.module.targets\1.0.0\build\Package.Build.props" Link="Package.Build.props" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ Culture.Name }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        {% render_section "HeadMeta", required: false %}
+
+        <title>{% page_title Site.SiteName %}</title>
+
+        <link rel="icon" type="image/x-icon" href="/NewTheme/assets/favicon.ico" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/NewTheme/css/styles.css" rel="stylesheet" />
+
+        <!-- Injects Dynamic Head Content into Layout -->
+        {% resources type: "Meta" %}
+        {% resources type: "HeadLink" %}
+        {% resources type: "Stylesheet" %}
+        {% resources type: "HeadScript" %}
+    </head>
+
+    <body>
+        
+        {% render_section "Header", required: false %}
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.liquid">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                
+                <!-- Injects Dynamic Nav Content into Layout -->
+                {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_tag: "alias:main-menu" %}
+            </div>
+        </nav>
+
+        <div class="container" id="main">
+            {% render_section "Content" %}
+        </div>
+
+        <!-- Renders Footer into Layout -->
+        {% render_section "Footer", required: false %}
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="/NewTheme/js/scripts.js"></script>
+
+        <!-- Injects Dynamic FootScript into Layout -->
+        {% resources type: "FootScript" %}
+    </body>
+</html>
